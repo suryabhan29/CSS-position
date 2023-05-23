@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS position</title>
+        <style>
+            #parent{
+                width: 600px;
+                height: 600px;
+              border: 5px solid black;
+              position: relative;
+              margin: auto;
+            }
+            #child1{
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+               background-color: blue;
+               position: absolute;
+               bottom: 0px; right: 0px;
+               text-align: center;
+               font-size: 2em;
+               font-weight: bold;
+               text-decoration: underline;
+               color: white;
+               border-radius: 200px;
+            }
+            .child2{
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                background-color: orange;
+                position: absolute;
+                top: 0px; right: 0px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 2em;
+                text-decoration: underline;
+                color: white;
+                border-radius: 200px;
+            }
+            .child3{
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                background-color: purple;
+                position: absolute;
+                top: 0px; left: 0px;
+                text-align: center;
+                font-size: 2em;
+                font-weight: bold;
+                border-radius: 200px;
+                color: white;
+                text-decoration: underline;
+            }
+            .child4{
+                width: 200px;
+                height: 200px;
+                line-height: 200px;
+                font-size: 2em;
+                font-weight: bold;
+                background-color: green;
+                position: absolute;
+                bottom: 0px; left: 0px;
+                text-align: center;
+                border-radius: 200px;
+                color: white;
+                text-decoration: underline;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div id="child1">Bottom Right</div>
+            <div class="child2">Top Right</div>
+            <div class="child3">Top Left</div>
+            <div class="child4">Bottom Left</div>
+            
+        </div>
+    </body>
+</html>
